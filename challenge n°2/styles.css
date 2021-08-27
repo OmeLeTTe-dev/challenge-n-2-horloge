@@ -1,0 +1,83 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+#horloge
+{
+    border-radius: 50%;
+    width: 380px;
+    height: 380px;
+    left: 0px;                                            /*je creez ici mon horloge */
+    background: #fff;                                     
+    border: 5px solid black;
+    box-shadow: inset 2px 3px 8px 0 rgba(0,0,0,0.1);
+}
+
+#wrap
+{
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+#minute, #heure
+{
+    position: absolute;
+    height: 100px;
+    width: 6px;
+    margin: auto;
+    top: -27%;
+    left: 0;                                            /*je creez ici les aiguilles */
+    bottom: 0;
+    right: 0;
+    transform-origin:bottom center;
+    /* transform: rotate(0deg); */
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.4);
+    background: black;
+
+}
+
+#minute 
+{
+    position: absolute;
+    height: 140px;
+    width: 4px;
+    top: -38%;                          /*Affiche l'aiguille des minutes */
+    left: 0;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    /* transform: rotate(90deg); */
+}
+
+#seconde
+{
+    position: absolute;
+    height: 90px;
+    width: 2px;
+    margin: auto;
+    top: -26%;
+    left: 0;
+    bottom: 0;                          /*Affiche l'aiguille des secondes */
+    right: 0;
+    border-radius: 4px;
+    background: #ff4b3e;
+    transform-origin: bottom center;
+    /* transform: rotate(90deg);  */
+}
+
+#rondcentrale
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid #1b1b1b;
+    border-radius: 50%;
+    margin: auto;
+}
